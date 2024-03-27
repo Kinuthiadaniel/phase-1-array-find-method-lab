@@ -12,3 +12,9 @@ const records = [
     return win ? win.year : undefined;
 }
 console.log(superbowlWin(records));
+
+function win(records){
+  const winning = records.find((winner)=>winner.year === "2014");
+  return winning? winning.result: undefined;
+}
+console.log(win(records));
